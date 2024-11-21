@@ -16,6 +16,7 @@
   --error: #e74a3b;
   --font-family: 'Poppins', sans-serif;
   --second-family: 'Impact', sans-serif;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body,
