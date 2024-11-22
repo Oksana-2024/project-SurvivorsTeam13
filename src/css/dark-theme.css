@@ -1,0 +1,52 @@
+:root {
+    --text-color: var(--white);
+    --accent-color: var(--accent-green-dt);
+    --main-background: var(--black-dt);
+    --second-background: var(--accent-green-dt);
+    --third-background: var(--charcoal-dt);
+    --btn-hero-background: var(--hover-green);
+    --btn-hero-hover: var(--accent-green-dt);
+    --second-hover: var(--hover-green-dt);
+    --third-hover: var(--hover-grey-dt);
+    --tech-skills-background: var(--dark-accent-dt); 
+  }
+  .hero-container {
+    background-image: url(../img/decor-dark/decor_hero_mobile.png);
+  }
+  
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: url(../img/decor-dark/decor_hero_mobile@2x.png);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero-container {
+      background-image: url(../img/decor-dark/decor_hero_tablet.png);
+    }
+  
+    @media screen and (min-resolution: 192dpi),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+      .hero-container {
+        background-image: url(../img/decor-dark/decor_hero_tablet@2x.png);
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .hero-container {
+      background-image: url(../img/decor-dark/decor_hero_desktop.png);
+    }
+  
+    @media screen and (min-resolution: 192dpi),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+      .hero-container {
+        background-image: url(../img/decor-dark/decor_hero_desktop@2x.png);
+      }
+    }
+  }
+  
