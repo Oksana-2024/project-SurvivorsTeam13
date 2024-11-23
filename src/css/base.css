@@ -30,6 +30,16 @@
   --second-hover: var(--hover-green);
   --third-hover: var(--hover-grey);
   --tech-skills-background: var(--light-accent);
+  --fill-icon: var(--accent-green);
+  --icon-background: var(--light-accent);
+  --border-footer: var(--light-grey);
+  
+  --switch-background: var(--light-grey);
+  --switch-color: var(--accent-green);
+  --accordeon-background: var(--light-accent);
+  --tech-skills-background: var(--light-accent);
+  --tech-skills-color: var(--accent-green);
+  --point-tech-skill:var(--accent-green);
 }
 
 /*  base css rules */
