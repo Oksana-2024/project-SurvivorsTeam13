@@ -40,7 +40,7 @@
   height: 8px;
   background-color: var(--point-tech-skill);
 }
-.uneven {
+.uneven-line {
   position: relative;
   display: flex;
   overflow: hidden;
