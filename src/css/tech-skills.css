@@ -1,31 +1,17 @@
-.section {
-  padding-bottom: 80px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.tech-skills-section {
+  padding-top: 80px;
 }
 .tech-skills-container {
   padding: 0;
   margin: 0;
 }
 /* ========================== MOBILE STYLES ========================== */
-
 .tech-skills-section {
   overflow: hidden;
 }
-
 .even-line {
   display: flex;
-  background-color: var(--light-accent);
+  background-color: var(--accordeon-background);
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -35,7 +21,6 @@
   animation: marque 50s linear infinite;
 }
 .even-list li {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -45,7 +30,6 @@
   white-space: nowrap;
   position: relative;
 }
-
 .even-list li::after {
   content: '';
   position: absolute;
@@ -54,28 +38,23 @@
   left: -5px;
   width: 8px;
   height: 8px;
-  background-color: var(--accet-green);
+  background-color: var(--point-tech-skill);
 }
-
 .uneven {
   position: relative;
   display: flex;
   overflow: hidden;
-  background-color: var(--light-grey);
+  background-color: var(--third-background);
   transform: rotate(2deg);
   z-index: 0;
 }
-
 .uneven-list {
   display: flex;
   animation: marquee 50s linear infinite;
-
   color: var(--accet-green);
   position: relative;
 }
-
 .uneven-item {
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -84,8 +63,8 @@
   padding: 32px 24px;
   white-space: nowrap;
   position: relative;
+  color: var(--tech-skills-color);
 }
-
 .uneven-item::after {
   content: '';
   position: absolute;
@@ -94,32 +73,25 @@
   left: -5px;
   width: 8px;
   height: 8px;
-  background-color: var(--black);
-  color: var(--black);
+  background-color: var(--text-color);
 }
-
 @keyframes marquee {
   from {
     transform: translateX(-100%);
   }
-
   to {
     transform: translateX(0%);
   }
 }
-
 @keyframes marque {
   from {
     transform: translateX(0%);
   }
-
   to {
     transform: translateX(-100%);
   }
 }
-
 /* ========================== TABLET STYLES ========================== */
-
 @media screen and (min-width: 768px) {
   .uneven-item,
   .even-list li {
@@ -128,16 +100,12 @@
     letter-spacing: 0.01em;
     padding: 40px 24px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-bottom: 125px;
+  .tech-skills-section {
+    padding-top: 124px;
   }
 }
-
 @media screen and (min-width: 1280px) {
-  .section {
-    padding-bottom: 164px;
+  .tech-skills-section {
+    padding-top: 164px;
   }
 }
