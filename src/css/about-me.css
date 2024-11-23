@@ -1,0 +1,181 @@
+.about-title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.about-title-two {
+  color: var(--accent-color);
+}
+
+.about-picture-bio {
+  margin-bottom: 40px;
+  align-items: flex-end;
+}
+
+.about-image {
+  border-radius: 16px;
+  margin-bottom: 40px;
+  width: 320px;
+  height: 374px;
+}
+
+.about-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.about-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.about-text:first-of-type {
+  margin-bottom: 24px;
+}
+
+.education-role-list-item {
+  margin-bottom: 40px;
+}
+
+.education-role-sublist {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.education-role-sublist-item {
+  position: relative;
+  padding-left: 32px;
+}
+
+.education-role-sublist-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.education-role-sublist-item::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about-title {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+
+  .about-subtitle {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+
+  .about-picture-bio {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .about-image {
+    width: 336px;
+    height: 392px;
+    margin-bottom: 0px;
+  }
+
+  .about-bio {
+    flex: 1;
+    padding-bottom: 80px;
+  }
+
+  .about-content {
+    background-image: url(../img/decor/decor_about_tablet.png);
+    background-repeat: no-repeat;
+    background-position: 364px 682px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .about-content {
+      background-image: url(../img/decor/decor_about_tablet@2x.png);
+    }
+  }
+
+  .education-role-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .education-role-list-item {
+    width: 50%;
+  }
+
+  .education-role-list-item:first-child {
+    margin-bottom: unset;
+  }
+
+  .education-role-list-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-picture-bio {
+    justify-content: flex-end;
+    margin-bottom: 80px;
+    gap: 136px;
+  }
+
+  .about-image {
+    width: 384px;
+    height: 448px;
+  }
+
+  .about-bio {
+    max-width: 488px;
+    flex: unset;
+    padding-bottom: 232px;
+  }
+
+  .about-education-role {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 104px;
+  }
+
+  .education-role-list {
+    gap: 136px;
+    max-width: 904px;
+  }
+
+  .about-content {
+    background-image: url(../img/decor/decor_about_desktop.png);
+    background-repeat: no-repeat;
+    background-position: 824px 501px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    .about-content {
+      background-image: url(../img/decor/decor_about_desktop@2x.png);
+    }
+  }
+}
