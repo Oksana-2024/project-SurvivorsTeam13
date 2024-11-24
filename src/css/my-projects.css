@@ -64,7 +64,7 @@
   margin-bottom: 40px;
 }
 .load-container {
-  padding: 12px 24px;
+  padding: 12px 24px 0;
   width: 155px;
   height: 52px;
   margin-left: auto;
@@ -81,14 +81,22 @@
 .load-container:focus {
   color: var(--accent-color);
 }
-.decor-line {
-  border-radius: 8px;
-  background-color: var(--accent-color);
-  height: 2px;
-  width: 107px;
-  margin-left: auto;
-  margin-right: auto;
+.load-container.line {
+  position: relative;
 }
+
+.line::after {
+  content: '';
+  position: absolute;
+  left: 21px;
+  right: 0px;
+  bottom: 5px;
+  border-radius: 2px;
+  width: 108px;
+  height: 2px;
+  background: var(--accent-color);
+}
+
 .icon-project {
   stroke: var(--accent-color);
 }
@@ -133,6 +141,11 @@
   }
   .decor-line {
     width: 116px;
+  }
+
+  .line::after {
+    left: 23px;
+    width: 120px;
   }
 }
 @media screen and (min-width: 1280px) {
