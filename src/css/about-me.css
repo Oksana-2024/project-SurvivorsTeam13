@@ -105,7 +105,7 @@
   }
 
   .about-content {
-    background-image: url(../img/decor/decor_about_tablet.png);
+    background-image: url(/img/decor/decor_about_tablet.png);
     background-repeat: no-repeat;
     background-position: 364px 682px;
   }
@@ -114,7 +114,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     .about-content {
-      background-image: url(../img/decor/decor_about_tablet@2x.png);
+      background-image: url(/img/decor/decor_about_tablet@2x.png);
     }
   }
 
@@ -166,7 +166,7 @@
   }
 
   .about-content {
-    background-image: url(../img/decor/decor_about_desktop.png);
+    background-image: url(/img/decor/decor_about_desktop.png);
     background-repeat: no-repeat;
     background-position: 824px 501px;
   }
@@ -175,7 +175,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     .about-content {
-      background-image: url(../img/decor/decor_about_desktop@2x.png);
+      background-image: url(/img/decor/decor_about_desktop@2x.png);
     }
   }
 }

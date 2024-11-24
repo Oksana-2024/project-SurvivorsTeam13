@@ -17,9 +17,9 @@ axios
       autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 32,
-      // Responsive breakpoints
+      
       breakpoints: {
-        // when window width is >= 1280px
+        
         1280: {
           slidesPerView: 2,
         },
