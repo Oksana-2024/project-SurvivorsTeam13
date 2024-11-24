@@ -230,6 +230,7 @@
         flex-direction: column;
         gap: 120px;
         max-width: 488px;
+        height: 288px;
     }
 
     .work-together-article {
@@ -247,6 +248,11 @@
 
     .work-cont-link:hover {
         color: var(--accent-green);
+    }
+
+    .work-form-wrap {
+        height: 288px;
+        justify-content: center;
     }
 
     .work-form-input {
