@@ -14,7 +14,7 @@
 }
 
 .work-together-accent {
-    color: var(--accent-green);
+ color: var(--accent-green);
 }
 
 .work-together-article {
@@ -147,7 +147,7 @@
 }
 
 .work-form-btn:focus {
-    background-color: var(--hover-green);
+       background-color: var(--hover-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -277,6 +277,7 @@
     padding-right: 20px;
     transition: opacity 250ms var(--transition),
         visibility 250ms var(--transition);
+
 }
 
 .backdrop.is-open {
@@ -313,7 +314,6 @@
     align-items: center;
     justify-content: center;
     border: transparent;
-    border-radius: none;
     margin-left: auto;
 }
 
@@ -377,6 +377,7 @@
         padding-left: 394px;
         padding-right: 394px;
     }
+
 
     .work-form-input:hover,
     .work-form-textarea:hover {
