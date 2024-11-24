@@ -226,14 +226,12 @@
     }
 
     .work-together-box {
-        display: flex;
-        flex-direction: column;
-        gap: 120px;
         max-width: 488px;
     }
 
     .work-together-article {
         margin: 0;
+        padding-bottom: 120px;
     }
 
     .work-together-cont {
