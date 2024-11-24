@@ -3,11 +3,13 @@
   padding-bottom: 80px;
 }
 .benefits-title {
-  font-size: 49px;
-  line-height: 1.2;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  max-width: 320px;
 }
 .benefits-span {
   color: var(--accent-color);
