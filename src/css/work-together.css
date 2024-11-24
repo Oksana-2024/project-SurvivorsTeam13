@@ -226,15 +226,12 @@
     }
 
     .work-together-box {
-        display: flex;
-        flex-direction: column;
-        gap: 120px;
         max-width: 488px;
-        height: 288px;
     }
 
     .work-together-article {
         margin: 0;
+        padding-bottom: 120px;
     }
 
     .work-together-cont {
@@ -248,11 +245,6 @@
 
     .work-cont-link:hover {
         color: var(--accent-green);
-    }
-
-    .work-form-wrap {
-        height: 288px;
-        justify-content: center;
     }
 
     .work-form-input {
