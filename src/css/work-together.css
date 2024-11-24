@@ -154,7 +154,7 @@
     .work-together-container {
         padding-top: 124px;
         padding-bottom: 124px;
-        background-image: url(../img/decor/decor_work_tablet.png);
+        background-image: url(/img/decor/decor_work_tablet.png);
         background-repeat: no-repeat;
         background-position: 91.5% 1.1%;
         background-size: 336px 260px;
@@ -164,7 +164,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
         .work-together-container {
-            background-image: url(../img/decor/decor_work_tablet@2x.png);
+            background-image: url(/img/decor/decor_work_tablet@2x.png);
         }
     }
 
@@ -201,7 +201,7 @@
     .work-together-container {
         padding-top: 164px;
         padding-bottom: 164px;
-        background-image: url(../img/decor/decor_work_desktop.png);
+        background-image: url(/img/decor/decor_work_desktop.png);
         background-repeat: no-repeat;
         background-position: 96% 9%;
         background-size: 526px 408px;
@@ -211,7 +211,7 @@
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
         .work-together-container {
-            background-image: url(../img/decor/decor_work_desktop@2x.png);
+            background-image: url(/img/decor/decor_work_desktop@2x.png);
         }
     }
 

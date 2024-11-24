@@ -87,7 +87,7 @@
     padding: 0;
   }
   .benefits-container {
-    background-image: url(../img/decor/decor_benefits_desktop.png);
+    background-image: url(/img/decor/decor_benefits_desktop.png);
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 694px -3px;
@@ -96,7 +96,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     .benefits-container {
-      background-image: url(../img/decor/decor_benefits_desktop.png);
+      background-image: url(/img/decor/decor_benefits_desktop.png);
     }
   }
   .benefits-team {
