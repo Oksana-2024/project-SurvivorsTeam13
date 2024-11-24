@@ -9,13 +9,12 @@
     line-height: 1.24;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black);
     max-width: 253px;
     margin-bottom: 40px;
 }
 
 .work-together-accent {
-    color: var(--accet-green);
+ color: var(--accent-green);
 }
 
 .work-together-article {
@@ -24,7 +23,6 @@
     line-height: 1.56;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--black);
     max-width: 320px;
     margin-bottom: 32px;
 }
@@ -56,17 +54,16 @@
     justify-content: center;
     flex-direction: row;
     gap: 16px;
-    color: var(--black);
 }
 
 .work-cont-link:focus {
-    color: var(--accet-green);
+    color: var(--accent-green);
 }
 
 .work-cont-icon {
     fill: none;
     stroke-width: 1px;
-    stroke: var(--accet-green);
+    stroke: var(--accent-green);
 }
 
 .work-form-wrap {
@@ -85,15 +82,12 @@
     height: 48px;
     border: transparent;
     border-radius: 8px;
-
-    background-color: var(--light-grey);
+    background-color: var(--third-background);
     padding: 16px;
-
-    outline: transparent;
 }
 
 .work-form-icon {
-    fill: var(--accet-green);
+    fill: var(--accent-green);
     position: absolute;
     right: 16px;
     top: 50%;
@@ -108,13 +102,20 @@
     color: var(--error);
 }
 
+.invalid-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--error);
+}
+
 .work-form-textarea {
     width: 100%;
     height: 128px;
     border: transparent;
     border-radius: 8px;
-
-    background-color: var(--light-grey);
+    background-color: var(--third-background);
     padding: 16px;
     resize: none;
     outline: transparent;
@@ -126,18 +127,17 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: var(--black);
 }
 
 .work-form-input:focus,
 .work-form-textarea:focus {
-    border: 1px solid var(--accet-green);
+    border: 1px solid var(--second-background);
 }
 
 .work-form-btn {
     padding: 12px 24px;
     border-radius: 8px;
-    background-color: var(--accet-green);
+    background-color: var(--accent-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -147,14 +147,13 @@
 }
 
 .work-form-btn:focus {
-    background-color: var(--hover);
+       background-color: var(--hover-green);
 }
 
 @media screen and (min-width: 768px) {
     .work-together-container {
         padding-top: 124px;
         padding-bottom: 124px;
-
         background-image: url(../img/decor/decor_work_tablet.png);
         background-repeat: no-repeat;
         background-position: 91.5% 1.1%;
@@ -202,7 +201,6 @@
     .work-together-container {
         padding-top: 164px;
         padding-bottom: 164px;
-
         background-image: url(../img/decor/decor_work_desktop.png);
         background-repeat: no-repeat;
         background-position: 96% 9%;
@@ -248,7 +246,7 @@
     }
 
     .work-cont-link:hover {
-        color: var(--accet-green);
+        color: var(--accent-green);
     }
 
     .work-form-input {
@@ -260,32 +258,26 @@
     }
 
     .work-form-btn:hover {
-        background-color: var(--hover);
+        background-color: var(--second-hover);
     }
 }
-
-
 
 .backdrop {
     width: 100%;
     height: 100%;
-
+    z-index: 15;
     position: fixed;
     top: 0;
     left: 0;
-
     background-color: rgba(46, 47, 66, 0.4);
-
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
-
     padding-left: 20px;
     padding-right: 20px;
+    transition: opacity 250ms var(--transition),
+        visibility 250ms var(--transition);
 
-    transition: opacity 250ms var(--transition), visibility 250ms var(--transition);
 }
 
 .backdrop.is-open {
@@ -298,20 +290,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 320px;
     min-height: 328px;
-
     border-radius: 16px;
-    border: 1px solid var(--light-grey);
-
+    border: 1px solid var(--third-background);
     padding: 48px 32px;
-
     transform: translate(-50%, -50%);
-
-    background-color: var(--white);
-
+    background-color: var(--main-background);
     transition: transform 250ms var(--transition);
+    z-index: 25;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -322,22 +309,18 @@
     position: absolute;
     top: 16px;
     right: 16px;
-
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: transparent;
-    border-radius: none;
-
     margin-left: auto;
 }
 
 .modal-close-icon {
     fill: none;
     stroke-width: 2px;
-    stroke: var(--black);
+    stroke: var(--text-color);
 }
 
 .modal-title {
@@ -347,7 +330,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: var(--accet-green);
+    color: var(--accent-color);
     margin-bottom: 16px;
     max-width: 256px;
 }
@@ -358,7 +341,7 @@
     line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--black);
+    color: var(--text-color);
     max-width: 256px;
 }
 
@@ -395,4 +378,9 @@
         padding-right: 394px;
     }
 
+
+    .work-form-input:hover,
+    .work-form-textarea:hover {
+        border: 1px solid var(--second-background);
+    }
 }

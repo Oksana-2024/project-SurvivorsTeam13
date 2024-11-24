@@ -1,35 +1,67 @@
 :root {
+  /* color */
   --black: #292929;
-  --accet-green: #00b068;
+  --accent-green: #00b068;
   --white: #f0f0f0;
   --light-grey: #e4e5e6;
   --hover-grey: #bbb;
   --light-accent: #bcdfd1;
-  --hover: #009156;
+  --hover-green: #009156;
   --black-dt: #1e2023;
-  --accet-green-dt: #14c57c;
-  --white-dt: #f0f0f0;
+  --accent-green-dt: #14c57c;
   --charcoal-dt: #2a2d32;
-  --hover-charcoal-dt: #3b3f45;
-  --dark-accet-dt: #204136;
+  --hover-grey-dt: #3b3f45;
+  --dark-accent-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
+  /* fonts */
   --first-font-family: 'Poppins', sans-serif;
   --second-font-family: 'Impact', sans-serif;
+  /* animation */
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  /* light theme */
+  --text-color: var(--black); /* колір тексту */
+  --accent-color: var(--accent-green); /* додатковий колір тексту */
+  --main-background: var(--white); /* основний фон */
+  --second-background: var(--light-accent);
+  --third-background: var(--light-grey);
+  --btn-hero-background: var(--light-accent);
+  --btn-hero-hover: var(--accent-green);
+  --second-hover: var(--hover-green);
+  --third-hover: var(--hover-grey);
+  --tech-skills-background: var(--light-accent);
+  --fill-icon: var(--accent-green);
+  --icon-background: var(--light-accent);
+  --border-footer: var(--light-grey);
+  
+  --switch-background: var(--light-grey);
+  --switch-color: var(--accent-green);
+  --accordeon-background: var(--light-accent);
+  --tech-skills-background: var(--light-accent);
+  --tech-skills-color: var(--accent-green);
+  --point-tech-skill:var(--accent-green);
 }
 
+/*  base css rules */
 body,
 h3,
 p,
 a,
-button {
+button,
+input,
+textarea {
   font-family: var(--first-font-family);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--main-background);
 }
 
 h1,
 h2 {
   font-family: var(--second-font-family);
+  color: var(--text-color);
 }
 
 .visually-hidden {
