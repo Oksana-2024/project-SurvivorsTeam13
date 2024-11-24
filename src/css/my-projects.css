@@ -1,0 +1,141 @@
+.my-projects-page {
+  padding-top: 80px;
+}
+.titel-my-projects {
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.green {
+  color: var(--accent-color);
+}
+.hidden {
+  display: none;
+}
+.project-img {
+  border-radius: 16px;
+  width: 320px;
+  height: 194px;
+  margin-bottom: 12px;
+}
+.small-desc {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.project-subtitle {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.projects-button {
+  border-radius: 8px;
+  width: 125px;
+  height: 48px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  background-color: var(--third-background);
+}
+.projects-button:hover,
+.projects-button:focus {
+  background-color: var(--third-hover);
+}
+.box-button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+.li-class-project {
+  margin-bottom: 40px;
+}
+.load-container {
+  padding: 12px 24px;
+  width: 154px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.load-container:hover,
+.load-container:focus {
+  color: var(--accent-color);
+}
+.decor-line {
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  height: 2px;
+  width: 106px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-project {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .my-projects-page {
+    padding-top: 124px;
+  }
+  .titel-my-projects {
+    font-size: 108px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.15;
+    margin-bottom: 60px;
+  }
+  .project-img {
+    border-radius: 24px;
+    width: 704px;
+    height: 404px;
+    margin-bottom: 16px;
+  }
+  .project-subtitle {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+  .box-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .small-desc {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .my-projects-page {
+    padding-top: 164px;
+  }
+  .titel-my-projects {
+    margin-bottom: 80px;
+  }
+  .project-img {
+    border-radius: 24px;
+    width: 1008px;
+    height: 580px;
+  }
+  .li-class-project {
+    padding-left: 104px;
+    padding-right: 104px;
+  }
+}
