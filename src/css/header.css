@@ -3,9 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-  
-   
-width: 100%;
+  width: 100%;
 height: 64px;
 }
 .header__logo {
@@ -16,17 +14,21 @@ font-size: 24px;
 line-height: 1;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #292929;
 }
 .logo-green {
     color: var(--accent-green); 
 }
-.menu__link:hover {
-    color: var(--hover-grey);
+.switch {
+    margin-right: 20px;
 }
-.menu__link {
-    color: inherit;
-    text-decoration: none;
+.menu__link:hover {
+    color: var(--accent-color);
+}
+.icon-bar {
+    fill: var(--text-color);
+}
+.mobile-menu__close {
+    background-color: transparent;
 }
 .header__nav {
     display: none;
@@ -37,7 +39,7 @@ color: #292929;
     display: block;
 }
 .hamburger-menu-button {
-       border: none;
+      background-color: transparent;
 }
 .modal-header__nav {
     display: flex; 
@@ -47,12 +49,10 @@ color: #292929;
 }
 .menu__list {
    
-font-family: var(-font-family);
 font-weight: 300;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.03em;
-color: var(--black);
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -67,8 +67,9 @@ gap: 24px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f0f0f0;
-    transition: transform 0.9s ease-in-out;
+    background: var(--main-background);
+    transition: transform 0.9s var(--transition);
+    z-index: 99;
   }
   .mod-win-head {
       display: flex;
@@ -79,9 +80,7 @@ gap: 24px;
      }
    
   .mobile-menu.active {
-    width: 100vw;
-    height: 100vh;
-      padding-left : 20px;
+         padding-left : 20px;
    padding-right: 20px;
     position: fixed;
     top: 0;
@@ -98,7 +97,7 @@ height: 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-image: url(../img/decor/decor_mob_menu.png);
+    background-image: url(/img/decor/decor_mob_menu.png);
     background-size: cover;
     background-position: top 96px;
     background-repeat: no-repeat;
@@ -113,7 +112,7 @@ height: 100%;
 }
 @media screen and (min-resolution: 192dpi) {
    .mobile-drop-list{
-    background-image: url(../img/decor/decor_mob_menu@2x.png);
+    background-image: url(/img/decor/decor_mob_menu@2x.png);
     background-size: 320px 704px;
    }
    
@@ -129,6 +128,9 @@ height: 100%;
     display: flex;
     margin-left: auto;
     }
+    .header__logo{
+        font-size: 32px;
+      }
 
    .menu__list {
        display: flex;
@@ -139,9 +141,4 @@ height: 100%;
     height: 24px;
       }
 } 
-dark-theme .header__logo {
-    color: var(--white-dt)
-}
-dark-theme .logo-green {
-    color: var(--accet-green-dt);
-}
+
