@@ -65,7 +65,7 @@
 }
 .load-container {
   padding: 12px 24px;
-  width: 154px;
+  width: 155px;
   height: 52px;
   margin-left: auto;
   margin-right: auto;
@@ -85,7 +85,7 @@
   border-radius: 8px;
   background-color: var(--accent-color);
   height: 2px;
-  width: 106px;
+  width: 107px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,8 +128,11 @@
   .load-container {
     font-size: 20px;
     line-height: 1.6;
-    width: 165px;
+    width: 167px;
     height: 56px;
+  }
+  .decor-line {
+    width: 116px;
   }
 }
 @media screen and (min-width: 1280px) {
