@@ -1,0 +1,141 @@
+.reviews-page {
+  padding-top: 80px;
+}
+
+.title-reviews {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.reviews-swiper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: auto !important;
+  margin-bottom: 24px;
+}
+
+.swiper-slide {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 296px;
+  border-radius: 16px;
+}
+
+.swiper-slide.swiper-slide-active,
+.swiper-slide.swiper-slide-next {
+  background-color: var(--third-background);
+}
+
+.reviews-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 32px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.autor-style {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: start;
+}
+
+.reviews-photo {
+  border-radius: 24px;
+}
+
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.swiper-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: right;
+  align-items: center;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+}
+
+.left-arrow,
+.right-arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-icon {
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+
+.left-arrow[disabled],
+.right-arrow[disabled] {
+  border: 1px solid var(--third-background);
+}
+
+.left-arrow[disabled] .reviews-icon,
+.right-arrow[disabled] .reviews-icon {
+  fill: var(--third-background);
+  stroke: var(--third-background);
+}
+
+.left-arrow {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-text {
+    max-width: 704px;
+  }
+
+  .swiper-slide {
+    width: 704px;
+    height: 224px;
+  }
+
+  .title-reviews {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-slide {
+    width: 592px;
+    height: 294px;
+  }
+
+  .reviews-text {
+    max-width: 592px;
+    height: 100%;
+  }
+}
