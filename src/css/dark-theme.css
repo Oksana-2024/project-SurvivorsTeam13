@@ -1,4 +1,4 @@
-:root {
+.dark {
   --text-color: var(--white);
   --accent-color: var(--accent-green-dt);
   --main-background: var(--black-dt);
@@ -18,79 +18,79 @@
   --tech-skills-color: var(--accent-green-dt);
   --point-tech-skill: var(--accent-green-dt);
 }
-.hero-container {
+.dark .hero-container {
   background-image: url(/img/decor-dark/decor_hero_mobile.png);
 }
 
 @media screen and (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 2dppx) {
-  .hero-container {
+  .dark .hero-container {
     background-image: url(/img/decor-dark/decor_hero_mobile@2x.png);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero-container {
+  .dark .hero-container {
     background-image: url(/img/decor-dark/decor_hero_tablet.png);
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .hero-container {
+    .dark .hero-container {
       background-image: url(/img/decor-dark/decor_hero_tablet@2x.png);
     }
   }
-  .work-together-container {
+  .dark .work-together-container {
     background-image: url(/img/decor-dark/decor_work_tablet.png);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    .work-together-container {
+    .dark .work-together-container {
       background-image: url(/img/decor-dark/decor_work_tablet@2x.png);
     }
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-container {
+  .dark .hero-container {
     background-image: url(/img/decor-dark/decor_hero_desktop.png);
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .hero-container {
+    .dark .hero-container {
       background-image: url(/img/decor-dark/decor_hero_desktop@2x.png);
     }
   }
 
-  .about-content {
+  .dark .about-content {
     background-image: url(/img/decor-dark/decor_about_desktop.png);
   }
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .about-content {
+    .dark .about-content {
       background-image: url(/img/decor-dark/decor_about_desktop@2x.png);
     }
   }
-  .benefits-container {
+  .dark .benefits-container {
     background-image: url(/img/decor-dark/decor_benefits_desktop.png);
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .benefits-container {
+    .dark .benefits-container {
       background-image: url(/img/decor-dark/decor_benefits_desktop@2x.png);
     }
   }
 
-  .faq-decor {
+  .dark .faq-decor {
     background-image: url(/img/decor-dark/decor_faq_desktop.png);
     background-repeat: no-repeat;
     background-position: 50% 87%;
@@ -99,18 +99,18 @@
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .faq-decor {
+    .dark .faq-decor {
       background-image: url(/img/decor-dark/decor_faq_desktop@2x.png);
     }
   }
-  .work-together-container {
+  .dark .work-together-container {
     background-image: url(/img/decor-dark/decor_work_desktop.png);
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    .work-together-container {
+    .dark .work-together-container {
       background-image: url(/img/decor-dark/decor_work_desktop@2x.png);
     }
   }

@@ -1,31 +1,23 @@
 import { getDataLocalStorage, setDataToLocalStorage } from './localStorage-api';
 const checkbox = document.querySelector('#switch');
 const KEY_SWITCH = 'theme';
+const THEME_DARK = 'dark';
 
 checkbox.addEventListener('click', onClick);
-// Create link to prevent vite wrong links order
-createLink();
 
-const themeLink = document.querySelector('#theme-link');
 function toggleTheme() {
-  const theme = getDataLocalStorage(KEY_SWITCH);
-  themeLink.href =
-    theme === 'dark'
-      ? new URL('../css/dark-theme.css', import.meta.url).href
-      : '';
-  checkbox.checked = theme === 'dark';
+  const isDark = getDataLocalStorage(KEY_SWITCH) === THEME_DARK;
+  if (isDark) {
+    document.body.classList.add(THEME_DARK);
+  } else {
+    document.body.classList.remove(THEME_DARK);
+  }
+  checkbox.checked = isDark;
 }
 
 toggleTheme();
 
 function onClick(event) {
-  setDataToLocalStorage(KEY_SWITCH, event.target.checked ? 'dark' : '');
+  setDataToLocalStorage(KEY_SWITCH, event.target.checked ? THEME_DARK : '');
   toggleTheme();
-}
-
-function createLink() {
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.id = 'theme-link';
-  document.head.append(link);
 }
