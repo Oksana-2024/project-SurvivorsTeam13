@@ -6,50 +6,50 @@ const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 const leftBtn = document.querySelector('.left-arrow');
 const rightBtn = document.querySelector('.right-arrow');
 
-axios
-  .get(URL)
-  .then(function (response) {
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
-    swiperWrapper.innerHTML = createMarkup(response.data);
-    const swiper = new Swiper('.reviews-swiper', {
-      direction: 'horizontal',
-      loop: false,
-      autoHeight: true,
-      slidesPerView: 1,
-      spaceBetween: 32,
-      
-      breakpoints: {
-        
-        1280: {
-          slidesPerView: 2,
-        },
-      },
-      on: {
-        slideChange: swiper => {
-          if (swiper.isEnd) {
-            rightBtn.disabled = true;
-            leftBtn.disabled = false;
-          } else if (swiper.isBeginning) {
-            leftBtn.disabled = true;
-          } else {
-            rightBtn.disabled = false;
-            leftBtn.disabled = false;
-          }
-        },
-      },
-    });
+window.addEventListener('DOMContentLoaded', () => {
+  axios
+    .get(URL)
+    .then(function (response) {
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+      swiperWrapper.innerHTML = createMarkup(response.data);
+      const swiper = new Swiper('.reviews-swiper', {
+        direction: 'horizontal',
+        loop: false,
+        autoHeight: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
 
-    rightBtn.addEventListener('click', () => {
-      swiper.slideNext();
+        breakpoints: {
+          1280: {
+            slidesPerView: 2,
+          },
+        },
+        on: {
+          slideChange: swiper => {
+            if (swiper.isEnd) {
+              rightBtn.disabled = true;
+              leftBtn.disabled = false;
+            } else if (swiper.isBeginning) {
+              leftBtn.disabled = true;
+            } else {
+              rightBtn.disabled = false;
+              leftBtn.disabled = false;
+            }
+          },
+        },
+      });
+
+      rightBtn.addEventListener('click', () => {
+        swiper.slideNext();
+      });
+      leftBtn.addEventListener('click', () => {
+        swiper.slidePrev();
+      });
+    })
+    .catch(function (error) {
+      console.error(error);
     });
-    leftBtn.addEventListener('click', () => {
-      swiper.slidePrev();
-    });
-  })
-  .catch(function (error) {
-    console.log(error);
-  })
-  .finally(function () {});
+});
 
 function createMarkup(items) {
   return items
