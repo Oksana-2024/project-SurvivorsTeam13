@@ -1,18 +1,22 @@
-.benefits-container {
+.benefits-page {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .benefits-title {
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 52px;
-  line-height: 1.23;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
-  max-width: 320px;
 }
 .benefits-span {
   color: var(--accent-color);
+}
+.benefits-team {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .benefits-icon {
   fill: var(--fill-icon);
@@ -23,7 +27,7 @@
   height: 48px;
   background-color: var(--icon-background);
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -40,10 +44,9 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
-  .benefits-container {
+  .benefits-page {
     padding-top: 124px;
     padding-bottom: 124px;
   }
@@ -52,7 +55,7 @@
     font-size: 108px;
     line-height: 1.15;
     letter-spacing: 0.02em;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .benefits-team {
     display: grid;
@@ -78,9 +81,12 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .benefits-container {
+  .benefits-page {
     padding-top: 164px;
     padding-bottom: 164px;
+    background-image: url(../img/decor/decor_benefits_desktop.png);
+    background-repeat: no-repeat;
+    background-position: 1050px 119px;
   }
   .benefits-title {
     max-width: 700px;
@@ -88,17 +94,14 @@
     top: 70px;
     padding: 0;
   }
-  .benefits-container {
-    background-image: url(/img/decor/decor_benefits_desktop.png);
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-position: 694px -3px;
-  }
+
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .benefits-container {
-      background-image: url(/img/decor/decor_benefits_desktop.png);
+    .benefits-page {
+      background-image: url(../img/decor/decor_benefits_desktop@2x.png);
+      background-position: 80% 15%;
+      background-size: 30%;
     }
   }
   .benefits-team {
