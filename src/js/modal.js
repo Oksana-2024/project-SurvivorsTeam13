@@ -11,16 +11,18 @@ function hideModal() {
   backdrop.classList.remove('is-open');
 }
 
-closeModalBtn.addEventListener('click', hideModal);
+window.addEventListener('DOMContentLoaded', () => {
+  closeModalBtn.addEventListener('click', hideModal);
 
-backdrop.addEventListener('click', event => {
-  if (event.target === backdrop) {
-    hideModal();
-  }
-});
+  backdrop.addEventListener('click', event => {
+    if (event.target === backdrop) {
+      hideModal();
+    }
+  });
 
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') {
-    hideModal();
-  }
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      hideModal();
+    }
+  });
 });

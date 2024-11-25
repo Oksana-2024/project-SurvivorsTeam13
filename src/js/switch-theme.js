@@ -3,8 +3,6 @@ const checkbox = document.querySelector('#switch');
 const KEY_SWITCH = 'theme';
 const THEME_DARK = 'dark';
 
-checkbox.addEventListener('click', onClick);
-
 function toggleTheme() {
   const isDark = getDataLocalStorage(KEY_SWITCH) === THEME_DARK;
   if (isDark) {
@@ -15,9 +13,12 @@ function toggleTheme() {
   checkbox.checked = isDark;
 }
 
-toggleTheme();
-
 function onClick(event) {
   setDataToLocalStorage(KEY_SWITCH, event.target.checked ? THEME_DARK : '');
   toggleTheme();
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  checkbox.addEventListener('click', onClick);
+  toggleTheme();
+});
