@@ -104,8 +104,6 @@
   color: var(--accent-color);
 }
 
-
-
 @media screen and (min-width: 360px) {
   .hero-title {
     font-size: 64px;
