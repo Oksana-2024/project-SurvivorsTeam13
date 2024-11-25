@@ -42,7 +42,7 @@
   margin-bottom: 24px;
 }
 
-.education-role-list-item {
+.education {
   margin-bottom: 40px;
 }
 
@@ -105,7 +105,7 @@
   }
 
   .about-content {
-    background-image: url(/img/decor/decor_about_tablet.png);
+    background-image: url(../img/decor/decor_about_tablet.png);
     background-repeat: no-repeat;
     background-position: 364px 682px;
   }
@@ -114,24 +114,25 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     .about-content {
-      background-image: url(/img/decor/decor_about_tablet@2x.png);
+      background-image: url(../img/decor/decor_about_tablet@2x.png);
     }
   }
 
-  .education-role-list {
+  .about-education-role {
     display: flex;
     gap: 32px;
   }
 
-  .education-role-list-item {
-    width: 50%;
+  .education,
+  .role {
+    flex: 1;
   }
 
-  .education-role-list-item:first-child {
-    margin-bottom: unset;
+  .education {
+    margin-bottom: 0;
   }
 
-  .education-role-list-item:not(:last-child) {
+  .education-role-sublist-item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
@@ -156,17 +157,16 @@
 
   .about-education-role {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 104px;
+    padding-left: 202px;
   }
 
-  .education-role-list {
+  .education {
     gap: 136px;
     max-width: 904px;
   }
 
   .about-content {
-    background-image: url(/img/decor/decor_about_desktop.png);
+    background-image: url(../img/decor/decor_about_desktop.png);
     background-repeat: no-repeat;
     background-position: 824px 501px;
   }
@@ -175,7 +175,7 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
     .about-content {
-      background-image: url(/img/decor/decor_about_desktop@2x.png);
+      background-image: url(../img/decor/decor_about_desktop@2x.png);
     }
   }
 }
