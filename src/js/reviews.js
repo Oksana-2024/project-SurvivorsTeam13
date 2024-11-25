@@ -1,5 +1,5 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
 import axios from 'axios';
 
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
