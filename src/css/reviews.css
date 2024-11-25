@@ -116,6 +116,10 @@
     max-width: 704px;
   }
 
+  .reviews-page {
+    padding-top: 124px;
+  }
+
   .swiper-slide {
     width: 704px;
     height: 224px;
@@ -137,5 +141,9 @@
   .reviews-text {
     max-width: 592px;
     height: 100%;
+  }
+
+  .reviews-page {
+    padding-top: 164px;
   }
 }
