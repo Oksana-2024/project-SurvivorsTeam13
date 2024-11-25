@@ -1,0 +1,79 @@
+.footer-page {
+  border-top: 1px solid var(--border-footer);
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.footer-logo {
+  font-family: var(--second-font-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.footer-logo-jefferson {
+  color: var(--accent-color);
+}
+
+
+.footer-list {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-copyright {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 197px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    width: 351px;
+    height: 24px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-container-logo {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    margin-right: 169px;
+  }
+}
