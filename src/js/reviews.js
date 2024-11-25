@@ -59,7 +59,7 @@ function createMarkup(items) {
            <div class="reviews-text">
            ${review}
               <div class="autor-style">
-              <img class="reviews-photo" src="${avatar_url}" alt="Photo" width="40">
+              <img loading="lazy" class="reviews-photo" src="${avatar_url}" alt="Photo" width="40">
               <h4 class="reviews-subtitle">${author}</h4>
               </div>
            </div>
