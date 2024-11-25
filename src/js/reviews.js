@@ -11,15 +11,14 @@ axios
   .then(function (response) {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     swiperWrapper.innerHTML = createMarkup(response.data);
+
     const swiper = new Swiper('.reviews-swiper', {
       direction: 'horizontal',
       loop: false,
       autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 32,
-      // Responsive breakpoints
       breakpoints: {
-        // when window width is >= 1280px
         1280: {
           slidesPerView: 2,
         },
@@ -44,6 +43,14 @@ axios
     });
     leftBtn.addEventListener('click', () => {
       swiper.slidePrev();
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight') {
+        swiper.slideNext(); 
+      } else if (event.key === 'ArrowLeft') {
+        swiper.slidePrev(); 
+      }
     });
   })
   .catch(function (error) {
