@@ -27,8 +27,16 @@
   fill: var(--text-color);
 }
 .mobile-menu__close {
+  stroke: var(--text-color);
+}
+.mobile-menu__close {
   background-color: transparent;
 }
+.header__nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .hamburger-menu {
   margin-left: auto;
   display: block;
@@ -41,10 +49,6 @@
   text-align: center;
   justify-content: center;
 }
-.header__nav {
-  display: flex;
-  margin-left: auto;
-}
 .menu__list {
   font-weight: 300;
   font-size: 16px;
@@ -55,6 +59,9 @@
   flex-direction: column;
   text-align: center;
   gap: 24px;
+}
+
+.menu__list:not(.menu__mobile__list) {
   display: none;
 }
 
@@ -119,7 +126,10 @@
   .hamburger-menu {
     display: none;
   }
-
+  .header__nav {
+    display: flex;
+    margin-left: auto;
+  }
   .header__logo {
     font-size: 32px;
   }
@@ -131,5 +141,9 @@
     flex-direction: row;
     gap: 40px;
     height: 24px;
+  }
+
+  .menu__list:not(.menu__mobile__list) {
+    display: flex;
   }
 }
