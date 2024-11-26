@@ -61,8 +61,6 @@
 
 .mobile-menu {
   padding: 20px;
-  background-image: url(/img/decor/decor_mob_menu.png);
-  background-size: cover;
   background-position: 0 96px;
   background-repeat: no-repeat;
   position: fixed;
@@ -77,10 +75,20 @@
   transition: opacity 1s ease, transform 1s ease;
   background: var(--main-background);
   transition: transform 1s var(--transition);
-  z-index: 99;
+  z-index: 98;
+}
+
+.mobile-menu-container {
+  position: relative;
+  height: 100%;
+  transition: transform 1s  var(--transition);
+  padding-top: 72px;
+  padding-bottom: 40px;
   display: flex;
+  z-index: 99;
   flex-direction: column;
-  gap: 276px;
+  background: var(--main-background);
+  background-image: url(/img/decor/decor_mob_menu.png);
 }
 
 .mobile-menu.active {
@@ -92,7 +100,7 @@
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .mobile-menu {
+  .mobile-menu-container {
     background-image: url(/img/decor/decor_mob_menu@2x.png);
     background-size: 320px 704px;
   }
@@ -103,6 +111,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-bottom: 276px;
 }
 
 .mobile-menu-close {
