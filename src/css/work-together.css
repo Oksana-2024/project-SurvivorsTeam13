@@ -1,4 +1,4 @@
-.work-together-container {
+.work-together-page {
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -151,12 +151,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .work-together-container {
+    .work-together-page {
         padding-top: 124px;
         padding-bottom: 124px;
         background-image: url(/img/decor/decor_work_tablet.png);
         background-repeat: no-repeat;
-        background-position: 91.5% 1.1%;
+        background-position: 93% 1%;
         background-size: 336px 260px;
     }
 
@@ -198,12 +198,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .work-together-container {
+    .work-together-page {
         padding-top: 164px;
         padding-bottom: 164px;
         background-image: url(/img/decor/decor_work_desktop.png);
         background-repeat: no-repeat;
-        background-position: 96% 9%;
+        background-position: 95.7% 12%;
         background-size: 526px 408px;
     }
 
@@ -230,8 +230,7 @@
     }
 
     .work-together-article {
-        margin: 0;
-        padding-bottom: 120px;
+        margin-bottom: 120px;
     }
 
     .work-together-cont {
