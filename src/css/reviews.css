@@ -30,10 +30,6 @@
   width: 320px;
   height: 296px;
   border-radius: 16px;
-}
-
-.swiper-slide.swiper-slide-active,
-.swiper-slide.swiper-slide-next {
   background-color: var(--third-background);
 }
 
@@ -75,8 +71,6 @@
   gap: 16px;
   justify-content: right;
   align-items: center;
-  /* padding-left: 32px;
-  padding-right: 32px; */
 }
 
 .left-arrow,
@@ -89,6 +83,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 1s var(--transition) ;
+}
+
+.left-arrow:hover,
+.right-arrow:hover{
+  border:none;
+  background-color: var(--third-background);
 }
 
 .reviews-icon {

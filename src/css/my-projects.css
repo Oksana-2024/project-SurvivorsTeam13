@@ -45,6 +45,7 @@
   flex-direction: row;
   gap: 12px;
   background-color: var(--third-background);
+  transition: background-color 1s var(--transition);
 }
 .projects-button:hover,
 .projects-button:focus {
@@ -52,14 +53,18 @@
 }
 .box-button {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
   flex-direction: column;
   gap: 16px;
 }
-.li-class-project {
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   margin-bottom: 40px;
 }
+
 .load-container {
   padding: 12px 24px 0;
   width: 155px;
@@ -73,6 +78,7 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  transition: color 1s var(--transition);
 }
 .load-container:hover,
 .load-container:focus {
@@ -107,7 +113,6 @@
     font-weight: 400;
     font-size: 108px;
     line-height: 1.15;
-    margin-bottom: 60px;
   }
   .project-img {
     border-radius: 24px;
@@ -136,13 +141,15 @@
     width: 167px;
     height: 56px;
   }
-  .decor-line {
-    width: 116px;
-  }
-
+  
   .line::after {
     left: 23px;
     width: 120px;
+  }
+
+  .project-list{
+    gap: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -157,8 +164,10 @@
     width: 1008px;
     height: 580px;
   }
-  .li-class-project {
+  .project-list {
     padding-left: 104px;
     padding-right: 104px;
+    gap: 80px;
+    margin-bottom: 80px;
   }
 }
