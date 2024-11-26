@@ -10,6 +10,7 @@
   text-transform: uppercase;
   margin-bottom: 80px;
   text-align: center;
+  transition: color 1s var(--transition);
 }
 
 .reviews-swiper {

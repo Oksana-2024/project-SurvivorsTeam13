@@ -10,6 +10,7 @@
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.03em;
+  transition: color 1s var(--transition);
 }
 .accent-title {
   color: var(--accent-color);
