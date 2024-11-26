@@ -54,6 +54,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 16px;
+    transition: color 1s var(--transition);
 }
 
 .work-cont-link:focus {
@@ -84,6 +85,7 @@
     border-radius: 8px;
     background-color: var(--third-background);
     padding: 16px;
+    transition: border 1s var(--transition);
 }
 
 .work-form-icon {
@@ -119,6 +121,7 @@
     padding: 16px;
     resize: none;
     outline: transparent;
+    transition: border 1s var(--transition);
 }
 
 .work-form-input::placeholder,
@@ -144,6 +147,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--white);
+    transition: background-color 1s var(--transition);
 }
 
 .work-form-btn:focus {
@@ -254,6 +258,11 @@
         width: 592px;
     }
 
+    .work-form-input:hover,
+    .work-form-textarea:hover {
+        border: 1px solid var(--second-background);
+    }
+
     .work-form-btn:hover {
         background-color: var(--second-hover);
     }
@@ -272,9 +281,8 @@
     pointer-events: none;
     padding-left: 20px;
     padding-right: 20px;
-    transition: opacity 250ms var(--transition),
-        visibility 250ms var(--transition);
-
+    transition: opacity 1s var(--transition),
+        visibility 1s var(--transition);
 }
 
 .backdrop.is-open {
@@ -294,7 +302,7 @@
     padding: 48px 32px;
     transform: translate(-50%, -50%);
     background-color: var(--main-background);
-    transition: transform 250ms var(--transition);
+    transition: transform 1s var(--transition);
     z-index: 25;
 }
 
