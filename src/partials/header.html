@@ -1,68 +1,65 @@
 <header class="header-page">
   <div class="header-container container">
-    <a class="header__logo" href="./index.html"
+    <a class="header-logo" href="./index.html"
       >Lloyd<span class="logo-green">jefferson.</span></a
     >
 
-    <nav class="header__nav">
+    <nav class="header-nav">
       <label for="switch" class="switch">
         <input type="checkbox" name="switch" id="switch" />
         <span class="slider round"></span>
       </label>
 
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link js-menu__link" href="#about-me"> About me </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link js-nav-link" href="#about-me"> About me </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link js-menu__link" href="#my-projects"> Projects </a>
+        <li class="nav-item">
+          <a class="nav-link js-nav-link" href="#my-projects"> Projects </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link js-menu__link" href="#work-together">
+        <li class="nav-item">
+          <a class="nav-link js-nav-link" href="#work-together"> Contacts </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-baget js-menu-open">
+      <svg class="icon-baget" width="30" height="20">
+        <use href="../img/symbol-defs.svg#icon-baget"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="mobile-menu js-mobile-menu">
+    <div class="mobile-menu-article">
+      <a class="header-logo menu-logo" href="./index.html"
+        >Lloyd<span class="logo-green">jefferson.</span></a
+      >
+
+      <div class="mobile-menu-close js-mobile-menu-close">
+        <svg class="menu-close-icon" width="16" height="16">
+          <use href="/img/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link js-nav-link" href="#about-me">
+            About me
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link js-nav-link" href="#my-projects">
+            Projects
+          </a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link js-nav-link" href="#work-together">
             Contacts
           </a>
         </li>
       </ul>
     </nav>
-    <div class="hamburger-menu">
-      <button type="button" class="hamburger-menu-button">
-        <svg class="icon-bar" width="22" height="14">
-          <use href="/img/symbol-defs.svg#icon-baget"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <div class="mobile-menu">
-    <div class="mod-win-head">
-      <a class="header__logo" href="./index.html"
-        >Lloyd<span class="logo-green">jefferson.</span></a
-      >
-
-      <button type="button" class="mobile-menu__close">
-        <svg class="mobile-menu__close" width="16" height="16">
-          <use href="/img/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
-    <div class="mobile-drop-list">
-      <nav class="modal-header__nav">
-        <ul class="menu__list menu__mobile__list">
-          <li class="menu__item">
-            <a class="menu__link js-menu__link" href="#about-me"> About me </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link js-menu__link" href="#my-projects">
-              Projects
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link js-menu__link" href="#work-together">
-              Contacts
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </div>
 </header>
