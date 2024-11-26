@@ -4,25 +4,27 @@ const closeModalBtn = document.querySelector('.modal-close-btn');
 export function showModal() {
   document.body.style.overflow = 'hidden';
   backdrop.classList.add('is-open');
+
+  document.addEventListener('keydown', handleKeyDown);
 }
 
 function hideModal() {
   document.body.style.overflow = '';
   backdrop.classList.remove('is-open');
+
+  document.removeEventListener('keydown', handleKeyDown);
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  closeModalBtn.addEventListener('click', hideModal);
+function handleKeyDown(event) {
+  if (event.key === 'Escape') {
+    hideModal();
+  }
+}
 
-  backdrop.addEventListener('click', event => {
-    if (event.target === backdrop) {
-      hideModal();
-    }
-  });
+closeModalBtn.addEventListener('click', hideModal);
 
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      hideModal();
-    }
-  });
+backdrop.addEventListener('click', event => {
+  if (event.target === backdrop) {
+    hideModal();
+  }
 });
