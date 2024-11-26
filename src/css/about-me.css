@@ -5,6 +5,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
+  transition: color 1s var(--transition);
 }
 .about-title-two {
   color: var(--accent-color);

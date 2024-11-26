@@ -6,6 +6,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 40px;
+  transition: color 1s var(--transition);
 }
 .green {
   color: var(--accent-color);

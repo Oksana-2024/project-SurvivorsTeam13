@@ -11,6 +11,7 @@
     text-transform: uppercase;
     max-width: 253px;
     margin-bottom: 40px;
+    transition: color 1s var(--transition);
 }
 
 .work-together-accent {
