@@ -10,6 +10,7 @@
 }
 
 .header-logo {
+  font-family: var(--second-font-family);
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -60,9 +61,6 @@
 }
 
 .mobile-menu {
-  padding: 20px;
-  background-position: 0 96px;
-  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -76,31 +74,25 @@
   background: var(--main-background);
   transition: transform 1s var(--transition);
   z-index: 98;
+  background-image: url(/img/decor/decor_mob_menu.png);
+  background-position: 0 96px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.mobile-menu-container {
-  position: relative;
-  height: 100%;
-  transition: transform 1s  var(--transition);
-  padding-top: 72px;
-  padding-bottom: 40px;
-  display: flex;
-  z-index: 99;
-  flex-direction: column;
-  background: var(--main-background);
-  background-image: url(/img/decor/decor_mob_menu.png);
-}
+
 
 .mobile-menu.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   pointer-events: auto;
-  max-width: 320px;
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .mobile-menu-container {
+  .mobile-menu {
     background-image: url(/img/decor/decor_mob_menu@2x.png);
     background-size: 320px 704px;
   }
@@ -135,6 +127,9 @@
   .header-page {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .mobile-menu{
+    display: none;
   }
 
   .header-logo {

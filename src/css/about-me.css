@@ -165,17 +165,18 @@
     max-width: 904px;
   }
 
-  .about-content {
+  .about-me-page {
     background-image: url(../img/decor/decor_about_desktop.png);
     background-repeat: no-repeat;
-    background-position: 824px 501px;
+    background-position: 1064px 642px;
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .about-content {
+    .about-me-page {
       background-image: url(../img/decor/decor_about_desktop@2x.png);
+      background-size: 30%;
     }
   }
 }
