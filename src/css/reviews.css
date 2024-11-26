@@ -92,13 +92,20 @@
   background-color: var(--third-background);
 }
 
+
 .reviews-icon {
   fill: var(--text-color);
   stroke: var(--text-color);
 }
 
-.left-arrow[disabled],
-.right-arrow[disabled] {
+.left-arrow:disabled:hover,
+.right-arrow:disabled:hover{
+  border: 1px solid var(--third-background);
+  background-color:transparent;
+} 
+
+  .left-arrow[disabled],
+  .right-arrow[disabled] {
   border: 1px solid var(--third-background);
 }
 
