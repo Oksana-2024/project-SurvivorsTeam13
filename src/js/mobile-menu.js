@@ -11,13 +11,13 @@ hamburgerButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   mobileMenu.classList.remove('active');
   document.body.classList.remove('no-scroll');
+
 });
 
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('active');
-      const targetId = link.getAttribute('href').substring(1); 
-
-      
+      document.body.classList.remove('no-scroll'); 
+         
     });
   });

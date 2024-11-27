@@ -1,11 +1,12 @@
+.header-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+        justify-content: space-between;
     flex-direction: row;
-  width: 100%;
-height: 64px;
-}
+ }
 .header__logo {
  
 font-family: var(--second-font-family);
@@ -25,7 +26,8 @@ text-transform: uppercase;
     color: var(--accent-color);
 }
 .icon-bar {
-    fill: var(--text-color);
+    stroke: var(--text-color);
+    z-index: 100;
 }
 .mobile-menu__close {
     background-color: transparent;
@@ -142,3 +144,7 @@ height: 100%;
       }
 } 
 
+.mobile-menu {
+    /* ... other styles */
+    transition: transform 1s ease-in-out; /* Add transition */
+}
