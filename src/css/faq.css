@@ -106,6 +106,7 @@
   .accordion-container {
     flex-direction: row;
     gap: 104px;
+    position: relative;
   }
   .faq-title {
     max-width: 520px;
