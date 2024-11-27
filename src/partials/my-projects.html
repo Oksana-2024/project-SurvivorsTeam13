@@ -5,15 +5,30 @@
     </h2>
     <ul class="project-list">
       <li class="li-class-project">
-        <img
-          loading="lazy"
-          src="/img/my-projects/project_1.webp"
-          alt="1"
-          width="300"
-          height="184"
-          srcset="/img/my-projects/project_1@2x.webp 2x"
-          class="project-img"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/my-projects/project_1_tablet.webp 1x,
+              /img/my-projects/project_1@2x.webp     2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/my-projects/project_1.webp    1x,
+              /img/my-projects/project_1@2x.webp 2x
+            "
+          />
+          <img
+            loading="lazy"
+            src="/img/my-projects/project_1.webp"
+            alt="1"
+            width="300"
+            height="184"
+            class="project-img"
+          />
+        </picture>
         <p class="small-desc">React, JavaScript, Node JS, Git</p>
         <div class="box-button">
           <h3 class="project-subtitle">POWER PULSE WEBSERVICE</h3>
@@ -30,15 +45,30 @@
         </div>
       </li>
       <li class="li-class-project">
-        <img
-          loading="lazy"
-          src="/img/my-projects/project_2.webp"
-          alt="2"
-          width="300"
-          height="184"  
-          srcset="/img/my-projects/project_2@2x.webp 2x"
-          class="project-img"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/my-projects/project_2_tablet.webp 1x,
+              /img/my-projects/project_2@2x.webp     2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/my-projects/project_2.webp    1x,
+              /img/my-projects/project_2@2x.webp 2x
+            "
+          />
+          <img
+            loading="lazy"
+            src="/img/my-projects/project_2.webp"
+            alt="2"
+            width="300"
+            height="184"
+            class="project-img"
+          />
+        </picture>
         <p>React, JavaScript, Node JS, Git</p>
         <div class="box-button">
           <h3 class="project-subtitle">STARLIGHT STUDIO LANDING PAGE</h3>
@@ -55,15 +85,30 @@
         </div>
       </li>
       <li class="li-class-project">
-        <img
-          loading="lazy"
-          src="/img/my-projects/project_3.webp"
-          alt="3"
-          width="300"
-          height="184"
-          srcset="/img/my-projects/project_3@2x.webp 2x"
-          class="project-img"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/my-projects/project_3_tablet.webp 1x,
+              /img/my-projects/project_3@2x.webp     2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/my-projects/project_3.webp    1x,
+              /img/my-projects/project_3@2x.webp 2x
+            "
+          />
+          <img
+            loading="lazy"
+            src="/img/my-projects/project_3.webp"
+            alt="3"
+            width="300"
+            height="184"
+            class="project-img"
+          />
+        </picture>
         <p>React, JavaScript, Node JS, Git</p>
         <div class="box-button">
           <h3 class="project-subtitle">ENERGY FLOW WEBSERVICE</h3>
