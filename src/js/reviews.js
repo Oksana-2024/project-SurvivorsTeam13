@@ -5,11 +5,16 @@ import axios from 'axios';
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 const leftBtn = document.querySelector('.left-arrow');
 const rightBtn = document.querySelector('.right-arrow');
+const swiperWrapper = document.querySelector('.swiper-wrapper');
 
 axios
   .get(URL)
   .then(function (response) {
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    if (response.data.length === 0) {
+      swiperWrapper.innerHTML = '<p class="not-found">Not found</p>';
+      return;
+    }
+
     swiperWrapper.innerHTML = createMarkup(response.data);
 
     const swiper = new Swiper('.reviews-swiper', {
@@ -47,16 +52,17 @@ axios
 
     document.addEventListener('keydown', event => {
       if (event.key === 'ArrowRight') {
-        swiper.slideNext(); 
+        swiper.slideNext();
       } else if (event.key === 'ArrowLeft') {
-        swiper.slidePrev(); 
+        swiper.slidePrev();
       }
     });
   })
   .catch(function (error) {
-    console.log(error);
-  })
-  .finally(function () {});
+    alert('Не вдалося завантажити відгуки. Спробуйте пізніше.');
+    swiperWrapper.innerHTML = '<p class="not-found">Not found</p>';
+    console.error(error);
+  });
 
 function createMarkup(items) {
   return items
@@ -66,7 +72,7 @@ function createMarkup(items) {
            <div class="reviews-text">
            ${review}
               <div class="autor-style">
-              <img class="reviews-photo" src="${avatar_url}" alt="Photo" width="40" height="40">
+              <img class="reviews-photo" src="${avatar_url}" alt="Photo" width="40">
               <h4 class="reviews-subtitle">${author}</h4>
               </div>
            </div>
