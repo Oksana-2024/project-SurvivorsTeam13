@@ -1,4 +1,8 @@
 :root {
+  --first-font-family: 'Poppins', sans-serif;
+  --second-font-family: 'Impact', sans-serif;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+
   --black: #292929;
   --accent-green: #00b068;
   --white: #f0f0f0;
@@ -6,6 +10,7 @@
   --hover-grey: #bbb;
   --light-accent: #bcdfd1;
   --hover-green: #009156;
+
   --black-dt: #1e2023;
   --accent-green-dt: #14c57c;
   --charcoal-dt: #2a2d32;
@@ -13,11 +18,6 @@
   --dark-accent-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
-
-  --first-font-family: 'Poppins', sans-serif;
-  --second-font-family: 'Impact', sans-serif;
-
-  --transition: cubic-bezier(0.4, 0, 0.2, 1);
 
   --text-color: var(--black);
   --accent-color: var(--accent-green);
@@ -36,7 +36,6 @@
   --tech-skills-color: var(--accent-green);
   --point-tech-skill: var(--accent-green);
   --faq-line: var(--light-grey);
-
   --switch-background: var(--light-grey);
   --switch-color: var(--accent-green);
 }
@@ -56,6 +55,7 @@ textarea {
 
 body {
   background-color: var(--main-background);
+  transition: background-color 1s var(--transition);
 }
 
 h1,
@@ -79,4 +79,22 @@ h2 {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.hero-text,
+.hero-title,
+.header-logo,
+.hero-btn {
+  transition: color 1s var(--transition);
+}
+
+.hero-page,
+.header-page,
+.hero-btn-span,
+.hero-social-list {
+  transition: background-color 1s var(--transition);
+}
+
+.icon-baget {
+  transition: fill 1s var(--transition);
 }

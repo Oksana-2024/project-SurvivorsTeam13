@@ -47,16 +47,6 @@
   color: var(--accent-color);
 }
 
-.hero-text,
-.hero-title,
-.header-logo {
-  transition: color 1s var(--transition);
-}
-
-.hero-page {
-  transition: background-image 1s var(--transition);
-}
-
 .menu-baget {
   background-color: transparent;
 }
@@ -80,9 +70,9 @@
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s var(--transition), visibility 1s var(--transition),
+    transform 1s var(--transition);
   background: var(--main-background);
-  transition: transform 1s var(--transition);
   z-index: 98;
   background-image: url(/img/decor/decor_mob_menu.png);
   background-position: 60% 60%;
