@@ -105,16 +105,25 @@
     padding-bottom: 80px;
   }
 
-  .about-me-page {
+  .about-container {
+    position: relative;
+  }
+
+  .about-decor {
+    width: 336px;
+    height: 252px;
+    position: absolute;
+    top: 854px;
+    right: 34px;
     background-image: url(../img/decor/decor_about_tablet.png);
     background-repeat: no-repeat;
-    background-position: 364px 682px;
+    background-size: 336px 252px;
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .about-me-page {
+    .about-decor {
       background-image: url(../img/decor/decor_about_tablet@2x.png);
     }
   }
@@ -151,33 +160,36 @@
   }
 
   .about-bio {
-    max-width: 488px;
+    max-width: 487px;
     flex: unset;
     padding-bottom: 232px;
   }
 
   .about-education-role {
-    display: flex;
     padding-left: 202px;
-  }
-
-  .education {
     gap: 136px;
-    max-width: 904px;
   }
 
-  .about-me-page {
+  .education,
+  .role {
+    max-width: 384px;
+  }
+
+  .about-decor {
+    width: 384px;
+    height: 288px;
+    top: 705px;
+    right: 50px;
     background-image: url(../img/decor/decor_about_desktop.png);
     background-repeat: no-repeat;
-    background-position: 1064px 642px;
+    background-size: 384px 288px;
   }
 
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .about-me-page {
+    .about-decor {
       background-image: url(../img/decor/decor_about_desktop@2x.png);
-      background-size: 30%;
     }
   }
 }
