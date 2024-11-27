@@ -49,13 +49,12 @@
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: height 0.4s var(--transition), opacity 0.4s var(--transition),
-    padding 0.3s var(--transition);
+  transition: height 0.4s var(--transition), opacity 0.4s var(--transition);
+  padding: 15px 20px;
 }
 .accordion-item.active .accordion-body {
   height: auto;
   opacity: 1;
-  padding: 15px 20px;
 }
 .accordion-subtitle svg {
   fill: none;
@@ -101,6 +100,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .faq-page {
+    position: relative;
+  }
   .accordion-container {
     flex-direction: row;
     gap: 104px;
@@ -131,17 +133,21 @@
     max-width: 520px;
     max-height: 408px;
   }
-  .faq-page {
+  .faq-decor-container {
     background-image: url(/img/decor/decor_faq_desktop.png);
     background-repeat: no-repeat;
-    background-position: 24% 92%;
+    background-size: 526px 408px;
+    top: 575px;
+    left: 116px;
+    position: absolute;
+    width: 526px;
+    height: 408px;
   }
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .faq-page {
+    .faq-decor-container {
       background-image: url(/img/decor/decor_faq_desktop@2x.png);
-      background-position: 11% 91%;
     }
   }
 }
