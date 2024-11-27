@@ -85,8 +85,9 @@
   transition: transform 1s var(--transition);
   z-index: 98;
   background-image: url(/img/decor/decor_mob_menu.png);
-  background-position: 0 96px;
+  background-position: 60% 60%;
   background-repeat: no-repeat;
+  background-size: 320px 704px;
   display: flex;
   flex-direction: column;
   padding: 20px;

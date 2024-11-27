@@ -63,7 +63,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 40px;
 }
 
 .load-container {
@@ -80,6 +79,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   transition: color 1s var(--transition);
+  margin-top: 40px;
 }
 .load-container:hover,
 .load-container:focus {
@@ -141,6 +141,7 @@
     line-height: 1.6;
     width: 167px;
     height: 56px;
+    margin-top: 60px;
   }
   
   .line::after {
@@ -150,7 +151,6 @@
 
   .project-list{
     gap: 60px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -169,6 +169,8 @@
     padding-left: 104px;
     padding-right: 104px;
     gap: 80px;
-    margin-bottom: 80px;
+  }
+  .load-container{
+    margin-top: 80px;
   }
 }

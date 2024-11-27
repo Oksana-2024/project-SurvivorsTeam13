@@ -85,10 +85,7 @@
   .benefits-page {
     padding-top: 164px;
     padding-bottom: 164px;
-    background-image: url(../img/decor/decor_benefits_desktop.png);
-    background-repeat: no-repeat;
-    background-position: 1050px 119px;
-  }
+    }
   .benefits-title {
     max-width: 700px;
     position: relative;
@@ -96,13 +93,27 @@
     padding: 0;
   }
 
+  .benefits-container{
+    position: relative;
+  }
+
+  .benefits-decor {
+    width: 526px;
+    height: 408px;
+    background-image: url(../img/decor/decor_benefits_desktop.png);
+    background-repeat: no-repeat;
+    background-size: 526px 408px;
+    position: absolute;
+    top: -93px;
+    left: 704px;
+    z-index: -1;
+  }
+
   @media screen and (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 2dppx) {
-    .benefits-page {
+      .benefits-decor {
       background-image: url(../img/decor/decor_benefits_desktop@2x.png);
-      background-position: 80% 15%;
-      background-size: 30%;
     }
   }
   .benefits-team {
