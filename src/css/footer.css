@@ -19,7 +19,6 @@
   color: var(--accent-color);
 }
 
-
 .footer-list {
   margin-bottom: 40px;
   font-weight: 300;
@@ -29,13 +28,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  
 }
 
 .footer-link {
   padding-top: 2px;
   padding-bottom: 2px;
-  transition: color 1s var(--transition) ;
+  transition: color 1s var(--transition);
 }
 
 .footer-link:hover,
@@ -62,7 +60,7 @@
     gap: 40px;
   }
 
-    .footer-copyright {
+  .footer-copyright {
     width: 351px;
     height: 24px;
     margin-right: 0;
@@ -79,8 +77,8 @@
   .footer-logo,
   .footer-list {
     margin-bottom: 0;
-    }
-    .footer-container-logo{
-      margin-bottom: 40px;
-    }
+  }
+  .footer-container-logo {
+    margin-bottom: 40px;
+  }
 }
